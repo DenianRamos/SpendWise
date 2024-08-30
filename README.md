@@ -34,7 +34,13 @@ In the file `SpendWiseApplication/DependencyInjectionExtension.cs`, dependencies
 
 Custom exceptions are defined in the `SpendWise.Exception` namespace and are used to handle specific application errors.
 
-## 🧪 Tests
+## 🧪 Unit Tests
 
-Validation tests are defined in the file `Validators/Expenses/Register/RegisterExpenseValidatorTests.cs` and use FluentAssertions for assertions
+Unit tests are a crucial part of SpendWise to ensure the reliability and correctness of the application. The tests are designed to validate the functionality of various components, including use cases, controllers, and validators.
+
+### Example: RegisterExpenseValidatorTests
+
+The validation tests are defined in the file `Validators/Expenses/Register/RegisterExpenseValidatorTests.cs` and use FluentAssertions for assertions.
+
+
 
