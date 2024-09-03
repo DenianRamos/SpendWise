@@ -7,8 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="UseCase\Expenses\Fonts\Raleway-Bold.ttf" />
+    <None Remove="UseCase\Expenses\Fonts\Raleway-Regular.ttf" />
+    <None Remove="UseCase\Expenses\Fonts\WorkSans-Black.ttf" />
+    <None Remove="UseCase\Expenses\Fonts\WorkSans-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="UseCase\Expenses\Fonts\Raleway-Bold.ttf" />
+    <EmbeddedResource Include="UseCase\Expenses\Fonts\Raleway-Regular.ttf" />
+    <EmbeddedResource Include="UseCase\Expenses\Fonts\WorkSans-Black.ttf" />
+    <EmbeddedResource Include="UseCase\Expenses\Fonts\WorkSans-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageReference Include="ClosedXML" Version="0.102.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+    <PackageReference Include="PDFsharp-MigraDoc" Version="6.1.1" />
   </ItemGroup>
 
   <ItemGroup>
