@@ -44,15 +44,6 @@ To get a local copy up and running, follow these simple steps.
 
 3. Run the API and enjoy your testing :)
 
-## 🤝 Contributing
 
-Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) before submitting a pull request.
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-<!-- Links -->
-[dot-net=sdk]: https://dotnet.microsoft.com/en-us/download
 
 
