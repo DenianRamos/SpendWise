@@ -43,7 +43,8 @@ To get a local copy up and running, follow these simple steps.
 2. Fill in the information in the `appsettings.Development.json` file.
 
 3. Run the API and enjoy your testing :)
-
+<!-- Links -->
+[dot-net=sdk]: https://dotnet.microsoft.com/en-us/download
 
 
 
