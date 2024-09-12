@@ -1,46 +1,58 @@
+# SpendWise
 
-# 💸 SpendWise
+## 📝 SpendWise - About the Project
 
-**SpendWise** is your ultimate solution for managing expenses effortlessly! Whether you're tracking personal finances or managing a business budget, SpendWise provides a seamless and intuitive experience. With features to register, update, delete, and query expenses, you can stay on top of your financial game with ease. Say goodbye to financial stress and hello to smart spending with SpendWise!
+SpendWise is an **API** developed with .NET 8, utilizing ***Domain-Driven Design*** **(DDD)** principles to provide an organized and efficient solution for personal expense management. The main goal is to allow users to record their expenses, including details such as title, date and time, description, amount, and payment type, with the data being securely stored in a MySQL database.
 
+The API architecture is based on **REST**, using standard **HTTP** methods for efficient and simplified communication. Additionally, the API is documented with Swagger, offering an interactive graphical interface for developers to explore and test the endpoints easily.
 
+Among the NuGet packages used, AutoMapper is responsible for mapping between domain objects and request/response objects, reducing the need for repetitive and manual code. FluentAssertions is used in unit tests to make assertions more readable, helping to write clear and understandable tests. For validations, FluentValidation is used to implement validation rules in a simple and intuitive way in request classes, keeping the code clean and easy to maintain. Finally, EntityFramework acts as an ORM (Object-Relational Mapper) that simplifies interactions with the database, allowing the use of .NET objects to manipulate data directly, without the need to deal with SQL queries.
 
-## 📂 Project Structure
+## ✨ Features
 
-- **SpendWise.Application**: Contains the use cases for expense operations.
-- **SpendWise.Communication**: Contains request and response classes used in communication between the API and clients.
-- **SpendWise.Domain**: Contains domain entities and repositories.
-- **SpendWise.Exception**: Contains custom exceptions used in the project.
-- **SpendWise.Filters**: Contains exception filters for error handling.
-- **SpendWise.Controllers**: Contains the API controllers.
+- **Domain-Driven Design (DDD)**: Modular structure that facilitates understanding and maintaining the application domain.
+- **Unit Testing**: Comprehensive tests with FluentAssertions to ensure functionality and quality.
+- **Report Generation**: Ability to export detailed reports to PDF and Excel, offering effective visual analysis of expenses.
+- **RESTful API with Swagger Documentation**: Documented interface that facilitates integration and testing by developers.
 
-## 🛠️ Dependencies
+## 🛠️ Built With
 
-- **AutoMapper**: For object mapping.
-- **FluentValidation**: For data validation.
-- **Microsoft.Extensions.DependencyInjection**: For dependency injection.
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+ ![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+ ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
 
-## ⚙️ Configuration
+## 🚀 Getting Started
 
-### Dependency Injection
+To get a local copy up and running, follow these simple steps.
 
-In the file `SpendWiseApplication/DependencyInjectionExtension.cs`, dependencies are configured as follows:
+### Prerequisites
 
-## Tools
-![.NET](https://img.shields.io/static/v1?style=for-the-badge&message=.NET&color=512BD4&logo=.NET&logoColor=FFFFFF&label=) ![C#](https://img.shields.io/badge/C%23-51375e?logo=c-sharp&logoColor=white&style=for-the-badge) ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white) ![MySQL](https://img.shields.io/static/v1?style=for-the-badge&message=MySQL&color=4479A1&logo=MySQL&logoColor=FFFFFF&label=)
+* Visual Studio version 2022+ or Visual Studio Code 
+* Windows 10+ or Linux/MacOS with [.NET SDK][dot-net=sdk] installed
+* MySQL Server
 
+### Installation
 
-## ❗ Exceptions
+1. Clone the repository:
+```sh
+ git clone https://github.com/DenianRamos/SpendWise.git
+ ```
 
-Custom exceptions are defined in the `SpendWise.Exception` namespace and are used to handle specific application errors.
+2. Fill in the information in the `appsettings.Development.json` file.
 
-## 🧪 Unit Tests
+3. Run the API and enjoy your testing :)
 
-Unit tests are a crucial part of SpendWise to ensure the reliability and correctness of the application. The tests are designed to validate the functionality of various components, including use cases, controllers, and validators.
+## 🤝 Contributing
 
-### Example: RegisterExpenseValidatorTests
+Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) before submitting a pull request.
 
-The validation tests are defined in the file `Validators/Expenses/Register/RegisterExpenseValidatorTests.cs` and use FluentAssertions for assertions.
+## 📄 License
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+<!-- Links -->
+[dot-net=sdk]: https://dotnet.microsoft.com/en-us/download
 
 
