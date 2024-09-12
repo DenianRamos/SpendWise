@@ -123,6 +123,9 @@
   <data name="DATE_ERROR" xml:space="preserve">
     <value>Das Datum muss kleiner oder gleich heute sein</value>
   </data>
+  <data name="EMAIL_AND_PASSWORD_ERROR" xml:space="preserve">
+    <value>Ungültige E-Mail/Passwort</value>
+  </data>
   <data name="EXPENSE_NOT_fOUND" xml:space="preserve">
     <value>Ausgabe wurde nicht gefunden.</value>
   </data>

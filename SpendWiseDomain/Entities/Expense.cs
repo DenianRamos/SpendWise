@@ -21,6 +21,10 @@ namespace SpendWise.Domain.Entities
 
         public EPaymentType PaymentType { get; set; }
 
+        public long UserId { get; set; }
+
+        public User User { get; set; } = default!;
+
 
 
 

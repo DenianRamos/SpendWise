@@ -8,9 +8,12 @@ using SpendWise.Application.UseCase.Expenses.Delete;
 using SpendWise.Application.UseCase.Expenses.GetAll;
 using SpendWise.Application.UseCase.Expenses.GetById;
 using SpendWise.Application.UseCase.Expenses.Register;
+using SpendWise.Application.UseCase.Expenses.Register.User;
 using SpendWise.Application.UseCase.Expenses.Reports.Excel;
 using SpendWise.Application.UseCase.Expenses.Reports.Pdf;
 using SpendWise.Application.UseCase.Expenses.Update;
+using SpendWise.Application.UseCase.Login;
+using SpendWise.Domain.Security;
 
 namespace SpendWise.Application
 {
@@ -37,11 +40,15 @@ namespace SpendWise.Application
             services.AddScoped<IUpdateExpenseUseCase, UpdateExpenseUseCase>(); 
             services.AddScoped<IGenerateExpensesReportExcelUseCase, GenerateExpensesReportExcelUseCase>();
             services.AddScoped<IGenerateExpensesReportPdfUseCase, GenerateExpensesReportPdfUseCase>();
+            services.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
+            services.AddScoped<ILoginUseCase, LoginUseCase>();
+           
+           
 
         }
         
     
-
+    
 
     }
 }

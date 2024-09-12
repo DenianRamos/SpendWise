@@ -15,4 +15,5 @@ namespace SpendWise.Domain.Enums
         Check = 3,
         EletronicTransfer = 4
     }
+    
 }

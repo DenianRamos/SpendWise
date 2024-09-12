@@ -1,21 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using SpendWise.Domain.Entities;
 
 namespace SpendWise.Infrastructure.DataAcess
 {
-    internal class SpendWiseDbContext : DbContext
+     public class SpendWiseDbContext : DbContext
     {
-        public SpendWiseDbContext(DbContextOptions options) : base(options)
-        {
-                
-        }
+      
+        public DbSet<User> Users { get; set; }
+
         public DbSet<Expense> Expenses { get; set; }
 
-
+        
+        public SpendWiseDbContext(DbContextOptions<SpendWiseDbContext> options)
+            : base(options)
+        {
+        }
     }
 }

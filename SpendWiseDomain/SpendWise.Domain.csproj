@@ -17,6 +17,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>ResourceReportGenerationMessage.resx</DependentUpon>
     </Compile>
+    <Compile Update="User\ResourceErrors\ResourceUserValidate.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResourceUserValidate.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -52,6 +57,15 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceReportGenerationMessage.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="User\ResourceErrors\ResourceUserValidate.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceUserValidate.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Reports\Users\" />
+    <Folder Include="Security\Tokens\" />
   </ItemGroup>
 
 </Project>

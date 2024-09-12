@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SpendWise.Application.UseCase.Expenses.Register;
 using SpendWise.Communication.Requests;
 using SpendWise.Communication.Responses;
@@ -12,11 +13,13 @@ namespace SpendWise.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SpendWiseController : ControllerBase
+    [Authorize]
+    public class ExpensesController : ControllerBase
     {
         [HttpPost]
         [ProducesResponseType(typeof(ResponseRegisterExpenseJson), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
+        
         public  async Task <IActionResult> Register([FromBody] RequestExpenseJson request, [FromServices] IRegisterExpenseUseCase useCase)
         {
             var response = await useCase.Execute(request);

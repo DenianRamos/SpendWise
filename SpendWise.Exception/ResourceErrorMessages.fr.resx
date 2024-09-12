@@ -123,6 +123,9 @@
   <data name="DATE_ERROR" xml:space="preserve">
     <value>La date doit être inférieure ou égale à aujourd'hui.</value>
   </data>
+  <data name="EMAIL_AND_PASSWORD_ERROR" xml:space="preserve">
+    <value>Email/mot de passe invalide</value>
+  </data>
   <data name="EXPENSE_NOT_fOUND" xml:space="preserve">
     <value>Dépense non trouvée.</value>
   </data>

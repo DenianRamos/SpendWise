@@ -123,6 +123,9 @@
   <data name="DATE_ERROR" xml:space="preserve">
     <value>A data deve ser menor ou igual a hoje</value>
   </data>
+  <data name="EMAIL_AND_PASSWORD_ERROR" xml:space="preserve">
+    <value>Email e/senha inválidos</value>
+  </data>
   <data name="EXPENSE_NOT_fOUND" xml:space="preserve">
     <value>Despesa não foi encontrada.</value>
   </data>
